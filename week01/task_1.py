@@ -29,10 +29,7 @@
 # Bir sətir koddan istifadə edərək aşağıdakı yazını göründüyü kimi çapa verin. Languages: Python C JavaScript
 # print("Languages: Python C JavaScript")
 
-
-# ad və soyad dəyişkənləri yaradın və onlara istədiyiniz kiçik hərflərdən ibarət dəyər verin. Sonra tam_ad adlı dəyərdə ad və soyadın ilk hərflərini böyük şəkildə çapa verərək həmin şəxsə Salam verin.
-# Nümunə: Salam, Arif Dadaşov! (Ekrana bu yazı çıxsın)
-# a = "eli"
-# b = "veliyev"
-# tam_ad = f'{a.capitalize()} {b.capitalize()}'
-# print(f"Salam, " + str(tam_ad) + "!")
+a = "eli"
+b = "veliyev"
+tam_ad = f'{a.capitalize()} {b.capitalize()}'
+print(f"Salam, " + str(tam_ad) + "!")
