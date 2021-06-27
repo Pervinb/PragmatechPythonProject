@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
@@ -17,8 +19,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Favicon and touch icons  -->
-    <link rel="shortcut icon" href="assets/icon/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/icon/apple-touch-icon-158-precomposed.png">
+    <link rel="shortcut icon" href="../static/assets/icon/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../static/assets/icon/apple-touch-icon-158-precomposed.png">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,8 +42,8 @@
             <div class="wrap-inner">          
                 <div id="site-logo" class="clearfix">
                     <div id="site-logo-inner">
-                        <a href="home-hero-slideshow.html" title="Construction" rel="home" class="main-logo">
-                            <img src="assets/img/logo-light.png" alt="Construction" data-retina="assets/img/logo-light@2x.png" data-width="204" data-height="30">
+                        <a href="home.html" title="Construction" rel="home" class="main-logo">
+                            <img src="../static/assets/img/logo-light.png" alt="Construction" data-retina="../static/assets/img/logo-light@2x.png" data-width="204" data-height="30">
                         </a>
                     </div>
                 </div><!-- /#site-logo -->
@@ -50,22 +52,15 @@
 
                 <nav id="main-nav" class="main-nav">
                     <ul class="menu">
-                        <li class="menu-item menu-item-has-children current-menu-item"><a href="home-revolution-slider-full-screen.html">Home</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="home-hero-slideshow.html">Slideshow Fullscreen</a></li>
-                                <li class="menu-item"><a href="home-revolution-slider-full-screen.html">Revolution Fullscreen</a></li>
-                                <li class="menu-item"><a href="home-revolution-slider-simple.html">Revolution Simple</a></li>
-                                <li class="menu-item"><a href="one-page-hero-slideshow.html">One-page Slideshow</a></li>
-                            </ul>
+                        <li class="menu-item menu-item-has-children current-menu-item"><a href="home.html">Home</a>
+                           
                         </li>
                         <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="page-contact.html">Contact</a></li>
-                                <li class="menu-item"><a href="page-about.html">About Us</a></li>
-                                <li class="menu-item"><a href="page-about-2.html">About Us 2</a></li>
-                                <li class="menu-item"><a href="page-about-3.html">About Us 3</a></li>
+                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                <li class="menu-item"><a href="about.html">About Us</a></li>
                                 <li class="menu-item"><a href="page-services.html">Services</a></li>
-                                <li class="menu-item"><a href="page-services-2.html">Services 2</a></li>
+                                
                                 <li class="menu-item"><a href="page-service-detail.html">Service Detail</a></li>
                                 <li class="menu-item"><a href="page-shop.html">Shop</a></li>
                                 <li class="menu-item"><a href="page-shop-single.html">Shop Single</a></li>
@@ -74,29 +69,13 @@
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children"><a href="#">Elements</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="icons.html">Icons</a></li>
-                                <li class="menu-item"><a href="buttons.html">Buttons</a></li>
-                                <li class="menu-item"><a href="toggles.html">Toggles</a></li>
-                                <li class="menu-item"><a href="typography.html">Typography</a></li>
-                                <li class="menu-item"><a href="galleries.html">Galleries</a></li>
-                                <li class="menu-item"><a href="iconboxs.html">IconBoxs</a></li>
-                            </ul>
+                           
                         </li>
                         <li class="menu-item menu-item-has-children"><a href="#">Portfolio</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="page-portfolio-grid.html">Grid</a></li>
-                                <li class="menu-item"><a href="page-portfolio-grid-fullwidth.html">Grid Full-Width</a></li>
-                                <li class="menu-item"><a href="page-portfolio-slider.html">Slider</a></li>
-                                <li class="menu-item"><a href="page-portfolio-slider-fullwidth.html">Slider Full-Width</a></li>
-                                <li class="menu-item"><a href="page-project-detail.html">Project Detail 1</a></li>
-                                <li class="menu-item"><a href="page-project-detail-2.html">Project Detail 2</a></li>
-                                <li class="menu-item"><a href="page-project-detail-3.html">Project Detail 3</a></li>
-                                <li class="menu-item"><a href="page-project-detail-4.html">Project Detail 4</a></li>                               
-                            </ul>
+                           
                         </li>
                         <li class="menu-item"><a href="blog.html">Blog</a></li>
-                        <li class="menu-item"><a href="page-contact.html">Contact</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav><!-- /#main-nav -->
 
@@ -113,7 +92,7 @@
                                 <li class="mini_cart_item">
                                     <a href="#" class="remove" title="Remove this item">×</a>
                                     <a href="#">
-                                        <img width="160" height="160" src="assets/img/shop-item.png" alt="image">
+                                        <img width="160" height="160" src="../static/assets/img/shop-item.png" alt="image">
                                         Shop Item 01
                                     </a>
                                                 
@@ -124,7 +103,7 @@
                                 <li class="mini_cart_item">
                                     <a href="#" class="remove" title="Remove this item">×</a>
                                     <a href="#">
-                                        <img width="160" height="160" src="assets/img/shop-item.png" alt="image">
+                                        <img width="160" height="160" src="../static/assets/img/shop-item.png" alt="image">
                                         Shop Item 02
                                     </a>
                                                 
@@ -135,7 +114,7 @@
                                 <li class="mini_cart_item">
                                     <a href="#" class="remove" title="Remove this item">×</a>
                                     <a href="#">
-                                        <img width="160" height="160" src="assets/img/shop-item.png" alt="image">
+                                        <img width="160" height="160" src="../static/assets/img/shop-item.png" alt="image">
                                         Shop Item 03
                                     </a>
                                                 
@@ -169,9 +148,9 @@
     <div id="rev-slider1" class="rev_slider fullwidthabanner">
         <ul>
             <!-- Slide -->
-            <li data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500" data-thumb="assets/img/slider/1.jpg" data-rotate="0" data-saveperformance="off" data-title="CONSTRUCTION">
+            <li data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500" data-thumb="../static/assets/img/slider/1.jpg" data-rotate="0" data-saveperformance="off" data-title="CONSTRUCTION">
                 <!-- Main Image -->
-                <img src="assets/img/slider/1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-no-retina>
+                <img src="../static/assets/img/slider/1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-no-retina>
                 <!-- Layers -->
                 <div class="tp-caption tp-resizeme text-white font-family-heading text-shadow font-weight-500"
                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -235,9 +214,9 @@
             <!-- End Slide -->
 
             <!-- Slide -->
-            <li data-transition="boxfade" data-slotamount="7" data-easein="Expo.easeOut" data-easeout="Expo.easeOut" data-masterspeed="2000" data-thumb="assets/img/slider/2.jpg" data-rotate="0" data-saveperformance="off" data-title="BEST COMPANY">
+            <li data-transition="boxfade" data-slotamount="7" data-easein="Expo.easeOut" data-easeout="Expo.easeOut" data-masterspeed="2000" data-thumb="../static/assets/img/slider/2.jpg" data-rotate="0" data-saveperformance="off" data-title="BEST COMPANY">
                 <!-- Main Image -->
-                <img src="assets/img/slider/2.jpg" alt="" data-bgposition="center center" data-no-retina>
+                <img src="../static/assets/img/slider/2.jpg" alt="" data-bgposition="center center" data-no-retina>
                 <!-- Layers -->
                 <div class="tp-caption tp-resizeme text-white font-family-heading text-shadow font-weight-500"
                     data-x="['left','left','left','left']" data-hoffset="['50','30','30','30']"
@@ -321,7 +300,7 @@
                                 <div class="col-md-4">
 
                                     <div class="service-item clearfix text-center">
-                                        <div class="thumb"><img src="assets/img/services/4.jpg" alt="image" /></div>
+                                        <div class="thumb"><img src="../static/assets/img/services/4.jpg" alt="image" /></div>
                                         <div class="service-item-wrap">
                                             <h3 class="title font-size-18"><a href="#">Construction Consultant</a></h3>
                                             <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget arcu.</p>
@@ -336,7 +315,7 @@
 
                                 <div class="col-md-4">
                                     <div class="service-item clearfix text-center">
-                                        <div class="thumb"><img src="assets/img/services/5.jpg" alt="image" /></div>
+                                        <div class="thumb"><img src="../static/assets/img/services/5.jpg" alt="image" /></div>
                                         <div class="service-item-wrap">
                                             <h3 class="title font-size-18"><a href="#">Resconstruction Services</a></h3>
                                             <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget arcu.</p>
@@ -351,7 +330,7 @@
 
                                 <div class="col-md-4">
                                     <div class="service-item clearfix text-center">
-                                        <div class="thumb"><img src="assets/img/services/6.jpg" alt="image" /></div>
+                                        <div class="thumb"><img src="../static/assets/img/services/6.jpg" alt="image" /></div>
                                         <div class="service-item-wrap">
                                             <h3 class="title font-size-18"><a href="#">Architectural Design</a></h3>
                                             <p class="desc">Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique. Vivamus enim quam, tincidunt vel blandit eu, molestie eget.</p>
@@ -466,7 +445,7 @@
                                         <div class="inner">
                                             <div class="grid">
                                             <figure class="effect-zoe">
-                                                <img src="assets/img/projects/1.jpg" alt="image" />
+                                                <img src="../static/assets/img/projects/1.jpg" alt="image" />
                                                 <figcaption>
                                                     <div>
                                                         <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
@@ -476,7 +455,7 @@
                                             </figure>
                                             </div>
 
-                                            <a class="project-zoom cbp-lightbox" href="assets/img/projects/1-full.jpg" data-title="LUXURY BUILDINGS">
+                                            <a class="project-zoom cbp-lightbox" href="../static/assets/img/projects/1-full.jpg" data-title="LUXURY BUILDINGS">
                                                 <i class="fa fa-arrows-alt"></i>
                                             </a>
                                         </div>
@@ -488,7 +467,7 @@
                                         <div class="inner">
                                             <div class="grid">
                                             <figure class="effect-honey">
-                                                <img src="assets/img/projects/2.jpg" alt="image" />
+                                                <img src="../static/assets/img/projects/2.jpg" alt="image" />
                                                 <figcaption>
                                                     <div>
                                                         <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
@@ -498,7 +477,7 @@
                                             </figure>
                                             </div>
 
-                                            <a class="project-zoom cbp-lightbox" href="assets/img/projects/2-full.jpg" data-title="LUXURY BUILDINGS">
+                                            <a class="project-zoom cbp-lightbox" href="../static/assets/img/projects/2-full.jpg" data-title="LUXURY BUILDINGS">
                                                 <i class="fa fa-arrows-alt"></i>
                                             </a>
                                         </div>
@@ -510,7 +489,7 @@
                                         <div class="inner">
                                             <div class="grid">
                                             <figure class="effect-oscar">
-                                                <img src="assets/img/projects/3.jpg" alt="image" />
+                                                <img src="../static/assets/img/projects/3.jpg" alt="image" />
                                                 <figcaption>
                                                     <div>
                                                         <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
@@ -520,7 +499,7 @@
                                             </figure>
                                             </div>
 
-                                            <a class="project-zoom cbp-lightbox" href="assets/img/projects/3-full.jpg" data-title="LUXURY BUILDINGS">
+                                            <a class="project-zoom cbp-lightbox" href="../static/assets/img/projects/3-full.jpg" data-title="LUXURY BUILDINGS">
                                                 <i class="fa fa-arrows-alt"></i>
                                             </a>
                                         </div>
@@ -532,7 +511,7 @@
                                         <div class="inner">
                                             <div class="grid">
                                             <figure class="effect-sadie">
-                                                <img src="assets/img/projects/4.jpg" alt="image" />
+                                                <img src="../static/assets/img/projects/4.jpg" alt="image" />
                                                 <figcaption>
                                                     <div>
                                                         <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
@@ -542,7 +521,7 @@
                                             </figure>
                                             </div>
 
-                                            <a class="project-zoom cbp-lightbox" href="assets/img/projects/4-full.jpg" data-title="LUXURY BUILDINGS">
+                                            <a class="project-zoom cbp-lightbox" href="../static/assets/img/projects/4-full.jpg" data-title="LUXURY BUILDINGS">
                                                 <i class="fa fa-arrows-alt"></i>
                                             </a>
                                         </div>
@@ -554,7 +533,7 @@
                                         <div class="inner">
                                             <div class="grid">
                                             <figure class="effect-zoe">
-                                                <img src="assets/img/projects/5.jpg" alt="image" />
+                                                <img src="../static/assets/img/projects/5.jpg" alt="image" />
                                                 <figcaption>
                                                     <div>
                                                         <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
@@ -564,7 +543,7 @@
                                             </figure>
                                             </div>
 
-                                            <a class="project-zoom cbp-lightbox" href="assets/img/projects/5-full.jpg" data-title="LUXURY BUILDINGS">
+                                            <a class="project-zoom cbp-lightbox" href="../static/assets/img/projects/5-full.jpg" data-title="LUXURY BUILDINGS">
                                                 <i class="fa fa-arrows-alt"></i>
                                             </a>
                                         </div>
@@ -576,7 +555,7 @@
                                         <div class="inner">
                                             <div class="grid">
                                             <figure class="effect-honey">
-                                                <img src="assets/img/projects/6.jpg" alt="image" />
+                                                <img src="../static/assets/img/projects/6.jpg" alt="image" />
                                                 <figcaption>
                                                     <div>
                                                         <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
@@ -586,7 +565,7 @@
                                             </figure>
                                             </div>
 
-                                            <a class="project-zoom cbp-lightbox" href="assets/img/projects/6-full.jpg" data-title="LUXURY BUILDINGS">
+                                            <a class="project-zoom cbp-lightbox" href="../static/assets/img/projects/6-full.jpg" data-title="LUXURY BUILDINGS">
                                                 <i class="fa fa-arrows-alt"></i>
                                             </a>
                                         </div>
@@ -598,7 +577,7 @@
                                         <div class="inner">
                                             <div class="grid">
                                             <figure class="effect-oscar">
-                                                <img src="assets/img/projects/7.jpg" alt="image" />
+                                                <img src="../static/assets/img/projects/7.jpg" alt="image" />
                                                 <figcaption>
                                                     <div>
                                                         <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
@@ -608,7 +587,7 @@
                                             </figure>
                                             </div>
 
-                                            <a class="project-zoom cbp-lightbox" href="assets/img/projects/7-full.jpg" data-title="LUXURY BUILDINGS">
+                                            <a class="project-zoom cbp-lightbox" href="../static/assets/img/projects/7-full.jpg" data-title="LUXURY BUILDINGS">
                                                 <i class="fa fa-arrows-alt"></i>
                                             </a>
                                         </div>
@@ -620,7 +599,7 @@
                                         <div class="inner">
                                             <div class="grid">
                                             <figure class="effect-sadie">
-                                                <img src="assets/img/projects/8.jpg" alt="image" />
+                                                <img src="../static/assets/img/projects/8.jpg" alt="image" />
                                                 <figcaption>
                                                     <div>
                                                         <h2><a target="_blank" href="page-project-detail.html">LUXURY BUILDINGS</a></h2>
@@ -630,7 +609,7 @@
                                             </figure>
                                             </div>
 
-                                            <a class="project-zoom cbp-lightbox" href="assets/img/projects/8-full.jpg" data-title="LUXURY BUILDINGS">
+                                            <a class="project-zoom cbp-lightbox" href="../static/assets/img/projects/8-full.jpg" data-title="LUXURY BUILDINGS">
                                                 <i class="fa fa-arrows-alt"></i>
                                             </a>
                                         </div>
@@ -776,7 +755,7 @@
                                 </div><!-- /.col-md-4 -->
 
                                 <div class="col-md-4">
-                                    <img src="assets/img/man.png" alt="image" />
+                                    <img src="../static/assets/img/man.png" alt="image" />
                                 </div><!-- /.col-md-4 -->
 
                             </div><!-- /.row -->
@@ -824,7 +803,7 @@
                                             <div class="cbp-item">
                                                 <div class="customer clearfix">
                                                     <div class="inner">
-                                                        <div class="image"><img src="assets/img/testimonials/1.jpg" alt="image" /></div>
+                                                        <div class="image"><img src="../static/assets/img/testimonials/1.jpg" alt="image" /></div>
                                                         <h4 class="name">GEORGE SLOWS</h4>
                                                         <div class="position">Builder manager</div>
                                                         <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
@@ -835,7 +814,7 @@
                                             <div class="cbp-item">
                                                 <div class="customer clearfix">
                                                     <div class="inner">
-                                                        <div class="image"><img src="assets/img/testimonials/2.jpg" alt="image" /></div>
+                                                        <div class="image"><img src="../static/assets/img/testimonials/2.jpg" alt="image" /></div>
                                                         <h4 class="name">BARBARA DOUGLAS</h4>
                                                         <div class="position">Builder manager</div>
                                                         <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
@@ -846,7 +825,7 @@
                                             <div class="cbp-item">
                                                 <div class="customer clearfix">
                                                     <div class="inner">
-                                                        <div class="image"><img src="assets/img/testimonials/3.jpg" alt="image" /></div>
+                                                        <div class="image"><img src="../static/assets/img/testimonials/3.jpg" alt="image" /></div>
                                                         <h4 class="name">GEORGE SLOWS</h4>
                                                         <div class="position">Builder manager</div>
                                                         <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
@@ -857,7 +836,7 @@
                                             <div class="cbp-item">
                                                 <div class="customer clearfix">
                                                     <div class="inner">
-                                                        <div class="image"><img src="assets/img/testimonials/1.jpg" alt="image" /></div>
+                                                        <div class="image"><img src="../static/assets/img/testimonials/1.jpg" alt="image" /></div>
                                                         <h4 class="name">GEORGE SLOWS</h4>
                                                         <div class="position">Builder manager</div>
                                                         <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
@@ -868,7 +847,7 @@
                                             <div class="cbp-item">
                                                 <div class="customer clearfix">
                                                     <div class="inner">
-                                                        <div class="image"><img src="assets/img/testimonials/2.jpg" alt="image" /></div>
+                                                        <div class="image"><img src="../static/assets/img/testimonials/2.jpg" alt="image" /></div>
                                                         <h4 class="name">GEORGE SLOWS</h4>
                                                         <div class="position">Builder manager</div>
                                                         <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
@@ -879,7 +858,7 @@
                                             <div class="cbp-item">
                                                 <div class="customer clearfix">
                                                     <div class="inner">
-                                                        <div class="image"><img src="assets/img/testimonials/3.jpg" alt="image" /></div>
+                                                        <div class="image"><img src="../static/assets/img/testimonials/3.jpg" alt="image" /></div>
                                                         <h4 class="name">GEORGE SLOWS</h4>
                                                         <div class="position">Builder manager</div>
                                                         <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
@@ -890,7 +869,7 @@
                                             <div class="cbp-item">
                                                 <div class="customer clearfix">
                                                     <div class="inner">
-                                                        <div class="image"><img src="assets/img/testimonials/1.jpg" alt="image" /></div>
+                                                        <div class="image"><img src="../static/assets/img/testimonials/1.jpg" alt="image" /></div>
                                                         <h4 class="name">GEORGE SLOWS</h4>
                                                         <div class="position">Builder manager</div>
                                                         <blockquote class="whisper">Vestibulum eu libero volutpat, portas quam acc, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit, elit quis facilisis dictum, diam justo volutpat dui.</blockquote>
@@ -911,7 +890,7 @@
                         <div class="container-fluid no-padding">
                             <div class="row no-margin">
                                 <div class="col-md-6 no-padding">
-                                    <img src="assets/img/group.jpg" alt="image">
+                                    <img src="../static/assets/img/group.jpg" alt="image">
                                 </div><!-- /.col-md-6 -->
 
                                 <div class="col-md-6 no-padding">
@@ -971,7 +950,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/1.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/1.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -991,7 +970,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/2.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/2.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1011,7 +990,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/3.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/3.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1031,7 +1010,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/4.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/4.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1051,7 +1030,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/1.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/1.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1071,7 +1050,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/2.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/2.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -1091,7 +1070,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/3.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/3.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1111,7 +1090,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/4.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/4.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1131,7 +1110,7 @@
                                                     <div class="inner">
                                                         <div class="image">
                                                             <div class="inner">
-                                                                <img src="assets/img/team/1.jpg" alt="image" />
+                                                                <img src="../static/assets/img/team/1.jpg" alt="image" />
                                                             </div>
                                                              <ul class="socials clearfix">
                                                                 <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1165,31 +1144,31 @@
                                     <div class="wprt-partners">
                                         <div class="owl-carousel">
                                             <div class="partner">
-                                                <a target="_blank" href="#"><img src="assets/img/partners/1.png" alt="image" /></a>
+                                                <a target="_blank" href="#"><img src="../static/assets/img/partners/1.png" alt="image" /></a>
                                             </div>
 
                                             <div class="partner">
-                                                <a target="_blank" href="#"><img src="assets/img/partners/2.png" alt="image" /></a>
+                                                <a target="_blank" href="#"><img src="../static/assets/img/partners/2.png" alt="image" /></a>
                                             </div>
 
                                             <div class="partner">
-                                                <a target="_blank" href="#"><img src="assets/img/partners/3.png" alt="image" /></a>
+                                                <a target="_blank" href="#"><img src="../static/assets/img/partners/3.png" alt="image" /></a>
                                             </div>
 
                                             <div class="partner">
-                                                <a target="_blank" href="#"><img src="assets/img/partners/4.png" alt="image" /></a>
+                                                <a target="_blank" href="#"><img src="../static/assets/img/partners/4.png" alt="image" /></a>
                                             </div>
 
                                             <div class="partner">
-                                                <a target="_blank" href="#"><img src="assets/img/partners/5.png" alt="image" /></a>
+                                                <a target="_blank" href="#"><img src="../static/assets/img/partners/5.png" alt="image" /></a>
                                             </div>
 
                                             <div class="partner">
-                                                <a target="_blank" href="#"><img src="assets/img/partners/1.png" alt="image" /></a>
+                                                <a target="_blank" href="#"><img src="../static/assets/img/partners/1.png" alt="image" /></a>
                                             </div>
 
                                             <div class="partner">
-                                                <a target="_blank" href="#"><img src="assets/img/partners/2.png" alt="image" /></a>
+                                                <a target="_blank" href="#"><img src="../static/assets/img/partners/2.png" alt="image" /></a>
                                             </div>
                                         </div>
                                     </div><!-- /.wprt-partners -->
@@ -1213,7 +1192,7 @@
             <div class="col-md-3">
                 <div class="widget widget_about margin-bottom-25">
                     <div class="margin-bottom-35">
-                        <img src="assets/img/logo-light@2x.png" width="204" height="30" alt="image" />
+                        <img src="../static/assets/img/logo-light@2x.png" width="204" height="30" alt="image" />
                     </div>
                     <p>Nullam vel enim risus. Integer rhoncus hendrerit sem egestas porttitor.</p>
                 </section>
@@ -1275,42 +1254,42 @@
                         <div class="instagram_badge_image">
                             <a href="#">
                                 <div class="item">
-                                    <img src="assets/img/instagram/1.jpg" alt="image" />
+                                    <img src="../static/assets/img/instagram/1.jpg" alt="image" />
                                 </div>          
                             </a>
                         </div>
                         <div class="instagram_badge_image">
                             <a href="#">
                                 <div class="item">
-                                    <img src="assets/img/instagram/2.jpg" alt="image" />
+                                    <img src="../static/assets/img/instagram/2.jpg" alt="image" />
                                 </div>          
                             </a>
                         </div>
                         <div class="instagram_badge_image">
                             <a href="#">
                                 <div class="item">
-                                    <img src="assets/img/instagram/3.jpg" alt="image" />
+                                    <img src="../static/assets/img/instagram/3.jpg" alt="image" />
                                 </div>          
                             </a>
                         </div>
                         <div class="instagram_badge_image">
                             <a href="#">
                                 <div class="item">
-                                    <img src="assets/img/instagram/4.jpg" alt="image" />
+                                    <img src="../static/assets/img/instagram/4.jpg" alt="image" />
                                 </div>          
                             </a>
                         </div>
                         <div class="instagram_badge_image">
                             <a href="#">
                                 <div class="item">
-                                    <img src="assets/img/instagram/5.jpg" alt="image" />
+                                    <img src="../static/assets/img/instagram/5.jpg" alt="image" />
                                 </div>          
                             </a>
                         </div>
                         <div class="instagram_badge_image">
                             <a href="#">
                                 <div class="item">
-                                    <img src="assets/img/instagram/6.jpg" alt="image" />
+                                    <img src="../static/assets/img/instagram/6.jpg" alt="image" />
                                 </div>          
                             </a>
                         </div>
@@ -1349,32 +1328,32 @@
 <a id="scroll-top">TOP</a>
 
 <!-- Javascript -->
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/animsition.js"></script>
-<script type="text/javascript" src="assets/js/plugins.js"></script>
-<script type="text/javascript" src="assets/js/countTo.js"></script>
-<script type="text/javascript" src="assets/js/fitText.js"></script>
-<script type="text/javascript" src="assets/js/flexslider.js"></script>
-<script type="text/javascript" src="assets/js/vegas.js"></script>
-<script type="text/javascript" src="assets/js/owlCarousel.js"></script>
-<script type="text/javascript" src="assets/js/cube.portfolio.js"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="../static/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/assets/js/animsition.js"></script>
+<script type="text/javascript" src="../static/assets/js/plugins.js"></script>
+<script type="text/javascript" src="../static/assets/js/countTo.js"></script>
+<script type="text/javascript" src="../static/assets/js/fitText.js"></script>
+<script type="text/javascript" src="../static/assets/js/flexslider.js"></script>
+<script type="text/javascript" src="../static/assets/js/vegas.js"></script>
+<script type="text/javascript" src="../static/assets/js/owlCarousel.js"></script>
+<script type="text/javascript" src="../static/assets/js/cube.portfolio.js"></script>
+<script type="text/javascript" src="../static/assets/js/main.js"></script>
 
 <!-- Revolution Slider -->
-<script type="text/javascript" src="includes/rev-slider/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="assets/js/rev-slider.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="../static/assets/js/rev-slider.js"></script>
 <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->  
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="includes/rev-slider/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="../static/includes/rev-slider/js/extensions/revolution.extension.video.min.js"></script>
 
 </body>
 </html>
