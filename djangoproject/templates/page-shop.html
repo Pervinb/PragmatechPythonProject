@@ -44,7 +44,7 @@
                 <div class="wrap-inner">          
                     <div id="site-logo" class="clearfix">
                         <div id="site-logo-inner">
-                            <a href="home.html" title="Construction" rel="home" class="main-logo">
+                            <a href="{% url 'home' %}" title="Construction" rel="home" class="main-logo">
                                 <img src="{% static  'assets/img/logo-light.png' %}" alt="Construction" data-retina="{% static  'assets/img/logo-light@2x.png' %}" data-width="204" data-height="30">
                             </a>
                         </div>
@@ -54,20 +54,19 @@
     
                     <nav id="main-nav" class="main-nav">
                         <ul class="menu">
-                            <li class="menu-item menu-item-has-children current-menu-item"><a href="home.html">Home</a>
+                            <li class="menu-item menu-item-has-children current-menu-item"><a href="{% url 'home' %}">Home</a>
                                
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                    <li class="menu-item"><a href="about.html">About Us</a></li>
-                                    <li class="menu-item"><a href="page-services.html">Services</a></li>
-                                    
-                                    <li class="menu-item"><a href="page-service-detail.html">Service Detail</a></li>
-                                    <li class="menu-item"><a href="page-shop.html">Shop</a></li>
-                                    <li class="menu-item"><a href="page-shop-single.html">Shop Single</a></li>
-                                    <li class="menu-item"><a href="page-shop-cart.html">Shop Cart</a></li>
-                                    <li class="menu-item"><a href="blog-single.html">Blog Single</a></li>
+                                    <li class="menu-item"><a href="{% url 'contact' %}">Contact</a></li>
+                                    <li class="menu-item"><a href="{% url 'about' %}">About Us</a></li>
+                                    <li class="menu-item"><a href="{% url 'service' %}">Services</a></li>
+                                    <li class="menu-item"><a href="{% url 'service-detail' %}/">Service Detail</a></li>
+                                    <li class="menu-item"><a href="{% url 'page-shop' %}">Shop</a></li>
+                                    <li class="menu-item"><a href="{% url 'shop-single' %}">Shop Single</a></li>
+                                    <li class="menu-item"><a href="{% url 'shop-cart' %}">Shop Cart</a></li>
+                                    <li class="menu-item"><a href="{% url 'blog-single' %}">Blog Single</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children"><a href="#">Elements</a>
@@ -462,17 +461,17 @@
                     <h2 class="widget-title">Useful links</h2>
                     
                     <ul class="links col2">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="{% url 'home' %}">Home</a></li>
                         <li class="last"><a href="#">Help Center</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
                         <li class="last"><a href="#">Term of Use</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li class="last"><a href="#">About Us</a></li>
+                        <li><a href="{% url 'service' %}">Services</a></li>
+                        <li class="last"><a href="{% url 'about' %}">About Us</a></li>
                         <li><a href="#">News</a></li>
                         <li class="last"><a href="#">Conditions</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
                         <li class="last"><a href="#">Conditions</a></li>
-                        <li><a href="#">Our Shop</a></li>
+                        <li><a href="{% url 'page-shop' %}">Our Shop</a></li>
                         <li class="last"><a href="#">Privacy Legal</a></li>
                     </ul>
                 </div>
@@ -544,10 +543,10 @@
 
             <div class="bottom-bar-menu">
                 <ul class="bottom-nav">
-                    <li><a href="#/">HOME</a></li>
-                    <li><a href="#/">ABOUT</a></li>
-                    <li><a href="#/">SERVICES</a></li>
-                    <li><a href="#/">CONTACT</a></li>
+                    <li><a href="{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'about' %}">ABOUT</a></li>
+                    <li><a href="{% url 'service' %}">SERVICES</a></li>
+                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
                 </ul>       
             </div><!-- /.bottom-bar-menu -->
         </div>
